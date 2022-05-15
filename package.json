@@ -1,0 +1,29 @@
+{
+  "name": "SonarCloudExample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jest": "^28.1.0"
+  },
+  "devDependencies": {
+    "jest-sonar-reporter": "^2.0.0",
+    "supertest": "^6.2.3"
+  }
+}
